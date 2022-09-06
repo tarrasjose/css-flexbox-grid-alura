@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+} /*Começando a colocar os icones do menu usando @font-face, depois vou no body/fontfamily e coloquei depois de open sans o nome dele, que é icones e o próximo passo é pegar pseudo elemento before na class com a tag i e colocar o codigo no content entre aspas duplas*/
+
+body {
+    background-color: #1D232A;
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
+
